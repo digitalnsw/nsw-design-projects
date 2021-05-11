@@ -1,0 +1,840 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NSW Digital Design System - Typography</title>
+  <meta name="robots" content="noindex" />
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="icon" href="../../favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/atom-one-light.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/xml.min.js"></script>
+</head>
+
+<body class="nsw-body-content nsw-docs nsw-docs--style">
+  <div class="nsw-docs__wrapper">
+    <div class="nsw-docs__nav">
+      <nav class="nsw-docs-nav">
+        <div class="nsw-docs-nav__wrapper">
+          <div class="nsw-docs-nav__title">
+            <a class="nsw-docs-nav__title-link" href="/">NSW Digital Design System</a>
+          </div>
+          <div class="nsw-docs-nav__title">
+            <button>
+              <span>Components</span>
+              <i class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">keyboard_arrow_down</i>
+            </button>
+          </div>
+          <ul class="nsw-docs-nav__list">
+            <li><a class="nsw-docs-nav__list-link" href="/components/accordion/index.html">Accordion</a></li>
+            <li><a class="nsw-docs-nav__list-link" href="/components/breadcrumbs/index.html">Breadcrumbs</a></li>
+            <li><a class="nsw-docs-nav__list-link" href="/components/button/index.html">Buttons</a></li>
+            <li><a class="nsw-docs-nav__list-link" href="/components/callout/index.html">Callout</a></li>
+            <li><a class="nsw-docs-nav__list-link" href="/components/card/index.html">Cards</a></li>
+            <li><a class="nsw-docs-nav__list-link" href="/components/content-block/index.html">Content blocks</a></li>
+            <li><a class="nsw-docs-nav__list-link" href="/components/direction-links/index.html">Direction links</a></li>
+            <li><a class="nsw-docs-nav__list-link" href="/components/footer/index.html">Footer</a></li>
+            <li><a class="nsw-docs-nav__list-link" href="/components/forms/index.html">Forms</a></li>
+            <li><a class="nsw-docs-nav__list-link" href="/components/site-wide-message/index.html">Global alert</a></li>
+            <li><a class="nsw-docs-nav__list-link" href="/components/header/index.html">Header</a></li>
+            <li><a class="nsw-docs-nav__list-link" href="/components/banner/index.html">Hero banner</a></li>
+            <li><a class="nsw-docs-nav__list-link" href="/components/hero-search/index.html">Hero search</a></li>
+            <li><a class="nsw-docs-nav__list-link" href="/components/in-page-navigation/index.html">In-page navigation</a></li>
+            <li><a class="nsw-docs-nav__list-link" href="/components/notification/index.html">In-page notification</a></li>
+            <li><a class="nsw-docs-nav__list-link" href="/components/link-list/index.html">Link list</a></li>
+            <li><a class="nsw-docs-nav__list-link" href="/components/main-navigation/index.html">Main navigation</a></li>
+            <li><a class="nsw-docs-nav__list-link" href="/components/media/index.html">Media</a></li>
+            <li><a class="nsw-docs-nav__list-link" href="/components/pagination/index.html">Pagination</a></li>
+            <li><a class="nsw-docs-nav__list-link" href="/components/progress-indicator/index.html">Progress Indicator</a></li>
+            <li><a class="nsw-docs-nav__list-link" href="/components/side-navigation/index.html">Side navigation</a></li>
+            <li><a class="nsw-docs-nav__list-link" href="/components/social-bar/index.html">Social bar</a></li>
+            <li><a class="nsw-docs-nav__list-link" href="/components/tables/index.html">Tables</a></li>
+            <li><a class="nsw-docs-nav__list-link" href="/components/tab-navigation/index.html">Tabs</a></li>
+            <li><a class="nsw-docs-nav__list-link" href="/components/tags/index.html">Tags</a></li>
+          </ul>
+      
+          <div class="nsw-docs-nav__title">
+            <button>
+              <span>Styles</span>
+              <i class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">keyboard_arrow_down</i>
+            </button>
+          </div>
+          <ul class="nsw-docs-nav__list">
+            <li><a class="nsw-docs-nav__list-link" href="/styles/grid/index.html">Grid</a></li>
+            <li><a class="nsw-docs-nav__list-link" href="/styles/iconography/index.html">Iconography</a></li>
+            <li><a class="nsw-docs-nav__list-link" href="/styles/layout/index.html">Layout</a></li>
+            <li><a class="nsw-docs-nav__list-link" href="/styles/typography/index.html">Typography</a></li>
+          </ul>
+      
+          <div class="nsw-docs-nav__title">
+            <button>
+              <span>Demo pages</span>
+              <i class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">keyboard_arrow_down</i>
+            </button>
+          </div>
+          <ul class="nsw-docs-nav__list">
+            <li><a target="_blank" class="nsw-docs-nav__list-link" href="/templates/full-width-hero-banner/index.html">Full width - Hero banner</a></li>
+            <li><a target="_blank" class="nsw-docs-nav__list-link" href="/templates/full-width-hero-banner-list/index.html">Full width - Hero banner [featured list]</a></li>
+            <li><a target="_blank" class="nsw-docs-nav__list-link" href="/templates/full-width-hero-search/index.html">Full width - Hero search</a></li>
+            <li><a target="_blank" class="nsw-docs-nav__list-link" href="/templates/sidebar-left/index.html">Two column - Sidebar on the left [side nav]</a></li>
+            <li><a target="_blank" class="nsw-docs-nav__list-link" href="/templates/sidebar-right/index.html">Two column - Sidebar on the right</a></li>
+            <li><a target="_blank" class="nsw-docs-nav__list-link" href="/templates/sidebar-empty/index.html">Two column - Sidebar on the right [empty]</a></li>
+          </ul>
+        </div>
+      </nav>    </div>
+    <div class="nsw-docs__main nsw-docs__main--narrow">
+      <div class="nsw-docs__container">
+        <div class="nsw-docs__back">
+          <a href="/" class="nsw-docs__link">
+            <i class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">keyboard_arrow_left</i>
+            <span>Home</span>
+          </a>
+        </div>
+        <div class="nsw-docs__intro">
+          <h1>Typography</h1>
+          
+        </div>
+        <div class="nsw-docs__content">
+
+<div class="nsw-docs-example nsw-docs-example--narrow">
+<h1>Heading 1</h1>
+<p>
+  font-size: 36px/48px<br>
+  font-weight: 600<br>
+  line-height: 45px/60px
+</p>
+<div class="nsw-docs__example nsw-docs__example--hidden">
+  <div class="nsw-docs__component">
+    <h1>Heading 1</h1>  </div>
+</div>
+<div class="nsw-docs-code">
+	<div class="nsw-docs-code__content is-open">
+		<button class="nsw-docs-code__copy">
+			<span>Copy</span>
+			<i class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">content_copy</i>
+		</button>
+		<div class="nsw-docs-code__wrapper">
+<pre><code class="html"><script>
+	  function escapeHtml(unsafe) {
+	    return unsafe
+	     .replace(/&/g, "&amp;")
+	     .replace(/</g, "&lt;")
+	     .replace(/>/g, "&gt;")
+	     .replace(/"/g, "&quot;")
+	     .replace(/'/g, "&#039;");
+	  }
+	  document.write(escapeHtml(`<h1>Heading 1</h1>`));
+</script></code></pre>
+		</div>
+	</div>
+</div>
+
+
+<hr>
+
+<h2>Heading 2</h2>
+<p>
+  font-size: 28px/32px<br>
+  font-weight: 600<br>
+  line-height: 40px/35px
+</p>
+<div class="nsw-docs__example nsw-docs__example--hidden">
+  <div class="nsw-docs__component">
+    <h2>Heading 2</h2>  </div>
+</div>
+<div class="nsw-docs-code">
+	<div class="nsw-docs-code__content is-open">
+		<button class="nsw-docs-code__copy">
+			<span>Copy</span>
+			<i class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">content_copy</i>
+		</button>
+		<div class="nsw-docs-code__wrapper">
+<pre><code class="html"><script>
+	  function escapeHtml(unsafe) {
+	    return unsafe
+	     .replace(/&/g, "&amp;")
+	     .replace(/</g, "&lt;")
+	     .replace(/>/g, "&gt;")
+	     .replace(/"/g, "&quot;")
+	     .replace(/'/g, "&#039;");
+	  }
+	  document.write(escapeHtml(`<h2>Heading 2</h2>`));
+</script></code></pre>
+		</div>
+	</div>
+</div>
+
+
+<hr>
+
+<h3>Heading 3</h3>
+<p>
+  font-size: 22px/24px<br>
+  font-weight: 600<br>
+  line-height: 32px/27.5px
+</p>
+<div class="nsw-docs__example nsw-docs__example--hidden">
+  <div class="nsw-docs__component">
+    <h3>Heading 3</h3>  </div>
+</div>
+<div class="nsw-docs-code">
+	<div class="nsw-docs-code__content is-open">
+		<button class="nsw-docs-code__copy">
+			<span>Copy</span>
+			<i class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">content_copy</i>
+		</button>
+		<div class="nsw-docs-code__wrapper">
+<pre><code class="html"><script>
+	  function escapeHtml(unsafe) {
+	    return unsafe
+	     .replace(/&/g, "&amp;")
+	     .replace(/</g, "&lt;")
+	     .replace(/>/g, "&gt;")
+	     .replace(/"/g, "&quot;")
+	     .replace(/'/g, "&#039;");
+	  }
+	  document.write(escapeHtml(`<h3>Heading 3</h3>`));
+</script></code></pre>
+		</div>
+	</div>
+</div>
+
+
+<hr>
+
+<h4>Heading 4</h4>
+<p>
+  font-size: 18px/20px<br>
+  font-weight: 600<br>
+  line-height: 28px/24px
+</p>
+<div class="nsw-docs__example nsw-docs__example--hidden">
+  <div class="nsw-docs__component">
+    <h4>Heading 4</h4>  </div>
+</div>
+<div class="nsw-docs-code">
+	<div class="nsw-docs-code__content is-open">
+		<button class="nsw-docs-code__copy">
+			<span>Copy</span>
+			<i class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">content_copy</i>
+		</button>
+		<div class="nsw-docs-code__wrapper">
+<pre><code class="html"><script>
+	  function escapeHtml(unsafe) {
+	    return unsafe
+	     .replace(/&/g, "&amp;")
+	     .replace(/</g, "&lt;")
+	     .replace(/>/g, "&gt;")
+	     .replace(/"/g, "&quot;")
+	     .replace(/'/g, "&#039;");
+	  }
+	  document.write(escapeHtml(`<h4>Heading 4</h4>`));
+</script></code></pre>
+		</div>
+	</div>
+</div>
+
+
+<hr>
+
+<h5>Heading 5&6</h5>
+<p>
+  font-size: 16px/16px<br>
+  font-weight: 600<br>
+  line-height: 24px/24px
+</p>
+<div class="nsw-docs__example nsw-docs__example--hidden">
+  <div class="nsw-docs__component">
+    <h5>Heading 5&6</h5>  </div>
+</div>
+<div class="nsw-docs-code">
+	<div class="nsw-docs-code__content is-open">
+		<button class="nsw-docs-code__copy">
+			<span>Copy</span>
+			<i class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">content_copy</i>
+		</button>
+		<div class="nsw-docs-code__wrapper">
+<pre><code class="html"><script>
+	  function escapeHtml(unsafe) {
+	    return unsafe
+	     .replace(/&/g, "&amp;")
+	     .replace(/</g, "&lt;")
+	     .replace(/>/g, "&gt;")
+	     .replace(/"/g, "&quot;")
+	     .replace(/'/g, "&#039;");
+	  }
+	  document.write(escapeHtml(`<h5>Heading 5&6</h5>`));
+</script></code></pre>
+		</div>
+	</div>
+</div>
+
+
+<hr>
+
+<p class="nsw-intro">Intro text</p>
+<p>
+  font-size: 18px/20px<br>
+  font-weight: 400<br>
+  line-height: 24px/28px
+</p>
+<div class="nsw-docs__example nsw-docs__example--hidden">
+  <div class="nsw-docs__component">
+    <p class="nsw-intro">Intro text</p>  </div>
+</div>
+<div class="nsw-docs-code">
+	<div class="nsw-docs-code__content is-open">
+		<button class="nsw-docs-code__copy">
+			<span>Copy</span>
+			<i class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">content_copy</i>
+		</button>
+		<div class="nsw-docs-code__wrapper">
+<pre><code class="html"><script>
+	  function escapeHtml(unsafe) {
+	    return unsafe
+	     .replace(/&/g, "&amp;")
+	     .replace(/</g, "&lt;")
+	     .replace(/>/g, "&gt;")
+	     .replace(/"/g, "&quot;")
+	     .replace(/'/g, "&#039;");
+	  }
+	  document.write(escapeHtml(`<p class="nsw-intro">Intro text</p>`));
+</script></code></pre>
+		</div>
+	</div>
+</div>
+
+
+<hr>
+
+<p>Body text</p>
+<p>
+  font-size: 18px/16px<br>
+  font-weight: 400<br>
+  line-height: 24px/24px
+</p>
+<div class="nsw-docs__example nsw-docs__example--hidden">
+  <div class="nsw-docs__component">
+    <p>Body text</p>  </div>
+</div>
+<div class="nsw-docs-code">
+	<div class="nsw-docs-code__content is-open">
+		<button class="nsw-docs-code__copy">
+			<span>Copy</span>
+			<i class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">content_copy</i>
+		</button>
+		<div class="nsw-docs-code__wrapper">
+<pre><code class="html"><script>
+	  function escapeHtml(unsafe) {
+	    return unsafe
+	     .replace(/&/g, "&amp;")
+	     .replace(/</g, "&lt;")
+	     .replace(/>/g, "&gt;")
+	     .replace(/"/g, "&quot;")
+	     .replace(/'/g, "&#039;");
+	  }
+	  document.write(escapeHtml(`<p>Body text</p>`));
+</script></code></pre>
+		</div>
+	</div>
+</div>
+
+
+<hr>
+
+<p><small>Small text</small></p>
+<p>
+  font-size: 14px/14px<br>
+  font-weight: 400<br>
+  line-height: 19px/19px
+</p>
+<div class="nsw-docs__example nsw-docs__example--hidden">
+  <div class="nsw-docs__component">
+    <p><small>Small text</small></p>  </div>
+</div>
+<div class="nsw-docs-code">
+	<div class="nsw-docs-code__content is-open">
+		<button class="nsw-docs-code__copy">
+			<span>Copy</span>
+			<i class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">content_copy</i>
+		</button>
+		<div class="nsw-docs-code__wrapper">
+<pre><code class="html"><script>
+	  function escapeHtml(unsafe) {
+	    return unsafe
+	     .replace(/&/g, "&amp;")
+	     .replace(/</g, "&lt;")
+	     .replace(/>/g, "&gt;")
+	     .replace(/"/g, "&quot;")
+	     .replace(/'/g, "&#039;");
+	  }
+	  document.write(escapeHtml(`<p><small>Small text</small></p>`));
+</script></code></pre>
+		</div>
+	</div>
+</div>
+
+
+<hr>
+
+<h3>Text-level markup</h3>
+<h4>Link</h4>
+<div class="nsw-docs__example nsw-docs__example--simple">
+  <div class="nsw-docs__component">
+    <p>Find out more <a href="#">here</a></p>  </div>
+</div>
+<div class="nsw-docs-code">
+	<div class="nsw-docs-code__content is-open">
+		<button class="nsw-docs-code__copy">
+			<span>Copy</span>
+			<i class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">content_copy</i>
+		</button>
+		<div class="nsw-docs-code__wrapper">
+<pre><code class="html"><script>
+	  function escapeHtml(unsafe) {
+	    return unsafe
+	     .replace(/&/g, "&amp;")
+	     .replace(/</g, "&lt;")
+	     .replace(/>/g, "&gt;")
+	     .replace(/"/g, "&quot;")
+	     .replace(/'/g, "&#039;");
+	  }
+	  document.write(escapeHtml(`<p>Find out more <a href="#">here</a></p>`));
+</script></code></pre>
+		</div>
+	</div>
+</div>
+
+
+<h4>Strong</h4>
+<div class="nsw-docs__example nsw-docs__example--simple">
+  <div class="nsw-docs__component">
+    <p><strong>This text is important!</strong></p>  </div>
+</div>
+<div class="nsw-docs-code">
+	<div class="nsw-docs-code__content is-open">
+		<button class="nsw-docs-code__copy">
+			<span>Copy</span>
+			<i class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">content_copy</i>
+		</button>
+		<div class="nsw-docs-code__wrapper">
+<pre><code class="html"><script>
+	  function escapeHtml(unsafe) {
+	    return unsafe
+	     .replace(/&/g, "&amp;")
+	     .replace(/</g, "&lt;")
+	     .replace(/>/g, "&gt;")
+	     .replace(/"/g, "&quot;")
+	     .replace(/'/g, "&#039;");
+	  }
+	  document.write(escapeHtml(`<p><strong>This text is important!</strong></p>`));
+</script></code></pre>
+		</div>
+	</div>
+</div>
+
+
+<h4>Emphasis</h4>
+<div class="nsw-docs__example nsw-docs__example--simple">
+  <div class="nsw-docs__component">
+    <p>This is <em>very</em> simple</p>  </div>
+</div>
+<div class="nsw-docs-code">
+	<div class="nsw-docs-code__content is-open">
+		<button class="nsw-docs-code__copy">
+			<span>Copy</span>
+			<i class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">content_copy</i>
+		</button>
+		<div class="nsw-docs-code__wrapper">
+<pre><code class="html"><script>
+	  function escapeHtml(unsafe) {
+	    return unsafe
+	     .replace(/&/g, "&amp;")
+	     .replace(/</g, "&lt;")
+	     .replace(/>/g, "&gt;")
+	     .replace(/"/g, "&quot;")
+	     .replace(/'/g, "&#039;");
+	  }
+	  document.write(escapeHtml(`<p>This is <em>very</em> simple</p>`));
+</script></code></pre>
+		</div>
+	</div>
+</div>
+
+
+<h4>Incorrect</h4>
+<div class="nsw-docs__example nsw-docs__example--simple">
+  <div class="nsw-docs__component">
+    <p>Only <s>50</s> 30 tickets left!</p>  </div>
+</div>
+<div class="nsw-docs-code">
+	<div class="nsw-docs-code__content is-open">
+		<button class="nsw-docs-code__copy">
+			<span>Copy</span>
+			<i class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">content_copy</i>
+		</button>
+		<div class="nsw-docs-code__wrapper">
+<pre><code class="html"><script>
+	  function escapeHtml(unsafe) {
+	    return unsafe
+	     .replace(/&/g, "&amp;")
+	     .replace(/</g, "&lt;")
+	     .replace(/>/g, "&gt;")
+	     .replace(/"/g, "&quot;")
+	     .replace(/'/g, "&#039;");
+	  }
+	  document.write(escapeHtml(`<p>Only <s>50</s> 30 tickets left!</p>`));
+</script></code></pre>
+		</div>
+	</div>
+</div>
+
+
+
+<h4>Abbreviation</h4>
+<div class="nsw-docs__example nsw-docs__example--simple">
+  <div class="nsw-docs__component">
+    <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>  </div>
+</div>
+<div class="nsw-docs-code">
+	<div class="nsw-docs-code__content is-open">
+		<button class="nsw-docs-code__copy">
+			<span>Copy</span>
+			<i class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">content_copy</i>
+		</button>
+		<div class="nsw-docs-code__wrapper">
+<pre><code class="html"><script>
+	  function escapeHtml(unsafe) {
+	    return unsafe
+	     .replace(/&/g, "&amp;")
+	     .replace(/</g, "&lt;")
+	     .replace(/>/g, "&gt;")
+	     .replace(/"/g, "&quot;")
+	     .replace(/'/g, "&#039;");
+	  }
+	  document.write(escapeHtml(`<p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>`));
+</script></code></pre>
+		</div>
+	</div>
+</div>
+
+
+<h4>Mathematical notations</h4>
+<div class="nsw-docs__example nsw-docs__example--simple">
+  <div class="nsw-docs__component">
+    <p>e<sup>x</sup>, sin<sup>2</sup> <i>x</i>, e<sup>x<sup>2</sup></sup> and f(x)<sup>g(x)<sup>a+b+c</sup></sup></p>  </div>
+</div>
+<div class="nsw-docs-code">
+	<div class="nsw-docs-code__content is-open">
+		<button class="nsw-docs-code__copy">
+			<span>Copy</span>
+			<i class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">content_copy</i>
+		</button>
+		<div class="nsw-docs-code__wrapper">
+<pre><code class="html"><script>
+	  function escapeHtml(unsafe) {
+	    return unsafe
+	     .replace(/&/g, "&amp;")
+	     .replace(/</g, "&lt;")
+	     .replace(/>/g, "&gt;")
+	     .replace(/"/g, "&quot;")
+	     .replace(/'/g, "&#039;");
+	  }
+	  document.write(escapeHtml(`<p>e<sup>x</sup>, sin<sup>2</sup> <i>x</i>, e<sup>x<sup>2</sup></sup> and f(x)<sup>g(x)<sup>a+b+c</sup></sup></p>`));
+</script></code></pre>
+		</div>
+	</div>
+</div>
+
+
+<hr>
+
+<h3>Unordered list</h3>
+<div class="nsw-docs__example nsw-docs__example--simple">
+  <div class="nsw-docs__component">
+    <ul>
+      <li>Vestibulum laoreet, nulla sed bibendum rhoncus</li>
+      <li>Mauris fringilla lacinia neque id vulputate
+        <ul>
+          <li>Mauris aliquet aliquet elit ut pulvinar</li>
+          <li>Pellentesque odio orci</li>
+          <li>Pellentesque pharetra mauris eget neque interdum luctus</li>
+        </ul>
+      </li>
+      <li>Phasellus vestibulum, augue et elementum tincidunt, quam libero tempor quam, a porttitor justo leo et tellus</li>
+      <li>Donec pellentesque risus a tristique tempus</li>
+    </ul>
+  </div>
+</div>
+<div class="nsw-docs-code">
+	<button class="nsw-docs-code__button">
+		<span>Show code</span>
+		<i class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">keyboard_arrow_down</i>
+	</button>
+	<div class="nsw-docs-code__content">
+		<button class="nsw-docs-code__copy">
+			<span>Copy</span>
+			<i class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">content_copy</i>
+		</button>
+		<div class="nsw-docs-code__wrapper">
+<pre><code class="html"><script>
+	  function escapeHtml(unsafe) {
+	    return unsafe
+	     .replace(/&/g, "&amp;")
+	     .replace(/</g, "&lt;")
+	     .replace(/>/g, "&gt;")
+	     .replace(/"/g, "&quot;")
+	     .replace(/'/g, "&#039;");
+	  }
+	  document.write(escapeHtml(`<ul>
+  <li>Vestibulum laoreet, nulla sed bibendum rhoncus</li>
+  <li>Mauris fringilla lacinia neque id vulputate
+    <ul>
+      <li>Mauris aliquet aliquet elit ut pulvinar</li>
+      <li>Pellentesque odio orci</li>
+      <li>Pellentesque pharetra mauris eget neque interdum luctus</li>
+    </ul>
+  </li>
+  <li>Phasellus vestibulum, augue et elementum tincidunt, quam libero tempor quam, a porttitor justo leo et tellus</li>
+  <li>Donec pellentesque risus a tristique tempus</li>
+</ul>
+`));
+</script></code></pre>
+		</div>
+	</div>
+</div>
+
+<hr>
+
+<h3>Ordered list</h3>
+<div class="nsw-docs__example nsw-docs__example--simple">
+  <div class="nsw-docs__component">
+    <ol>
+      <li>Vestibulum laoreet, nulla sed bibendum rhoncus</li>
+      <li>Mauris fringilla lacinia neque id vulputate
+        <ol>
+          <li>Mauris aliquet aliquet elit ut pulvinar</li>
+          <li>Pellentesque odio orci</li>
+          <li>Pellentesque pharetra mauris eget neque interdum luctus</li>
+        </ol>
+      </li>
+      <li>Phasellus vestibulum, augue et elementum tincidunt, quam libero tempor quam, a porttitor justo leo et tellus</li>
+      <li>Donec pellentesque risus a tristique tempus</li>
+    </ol>
+  </div>
+</div>
+<div class="nsw-docs-code">
+	<button class="nsw-docs-code__button">
+		<span>Show code</span>
+		<i class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">keyboard_arrow_down</i>
+	</button>
+	<div class="nsw-docs-code__content">
+		<button class="nsw-docs-code__copy">
+			<span>Copy</span>
+			<i class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">content_copy</i>
+		</button>
+		<div class="nsw-docs-code__wrapper">
+<pre><code class="html"><script>
+	  function escapeHtml(unsafe) {
+	    return unsafe
+	     .replace(/&/g, "&amp;")
+	     .replace(/</g, "&lt;")
+	     .replace(/>/g, "&gt;")
+	     .replace(/"/g, "&quot;")
+	     .replace(/'/g, "&#039;");
+	  }
+	  document.write(escapeHtml(`<ol>
+  <li>Vestibulum laoreet, nulla sed bibendum rhoncus</li>
+  <li>Mauris fringilla lacinia neque id vulputate
+    <ol>
+      <li>Mauris aliquet aliquet elit ut pulvinar</li>
+      <li>Pellentesque odio orci</li>
+      <li>Pellentesque pharetra mauris eget neque interdum luctus</li>
+    </ol>
+  </li>
+  <li>Phasellus vestibulum, augue et elementum tincidunt, quam libero tempor quam, a porttitor justo leo et tellus</li>
+  <li>Donec pellentesque risus a tristique tempus</li>
+</ol>
+`));
+</script></code></pre>
+		</div>
+	</div>
+</div>
+
+<hr>
+
+<h3>Definition list</h3>
+<div class="nsw-docs__example nsw-docs__example--simple">
+  <div class="nsw-docs__component">
+    <dl>
+      <dt>Ut mollis nisi vitae</dt>
+      <dd>Nunc porta purus non sem laoreet eleifend a pharetra ex. Nunc aliquet et velit a tincidunt.</dd>
+    
+      <dt>Cras consectetur quam</dt>
+      <dd>Nunc vel lacus venenatis, fermentum ipsum vel, gravida ex. Vivamus a scelerisque orci.</dd>
+    
+      <dt>Maecenas sit amet neque</dt>
+      <dd>Maecenas at risus ullamcorper odio facilisis ultrices et et metus. Mauris ex ante, vestibulum a arcu a, molestie ultricies eros.</dd>
+    
+      <dt>Cras ac lacus in ligula</dt>
+      <dd>Quisque dignissim libero sit amet fermentum tincidunt. Aenean quis neque ante.</dd>
+    </dl>
+  </div>
+</div>
+<div class="nsw-docs-code">
+	<button class="nsw-docs-code__button">
+		<span>Show code</span>
+		<i class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">keyboard_arrow_down</i>
+	</button>
+	<div class="nsw-docs-code__content">
+		<button class="nsw-docs-code__copy">
+			<span>Copy</span>
+			<i class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">content_copy</i>
+		</button>
+		<div class="nsw-docs-code__wrapper">
+<pre><code class="html"><script>
+	  function escapeHtml(unsafe) {
+	    return unsafe
+	     .replace(/&/g, "&amp;")
+	     .replace(/</g, "&lt;")
+	     .replace(/>/g, "&gt;")
+	     .replace(/"/g, "&quot;")
+	     .replace(/'/g, "&#039;");
+	  }
+	  document.write(escapeHtml(`<dl>
+  <dt>Ut mollis nisi vitae</dt>
+  <dd>Nunc porta purus non sem laoreet eleifend a pharetra ex. Nunc aliquet et velit a tincidunt.</dd>
+
+  <dt>Cras consectetur quam</dt>
+  <dd>Nunc vel lacus venenatis, fermentum ipsum vel, gravida ex. Vivamus a scelerisque orci.</dd>
+
+  <dt>Maecenas sit amet neque</dt>
+  <dd>Maecenas at risus ullamcorper odio facilisis ultrices et et metus. Mauris ex ante, vestibulum a arcu a, molestie ultricies eros.</dd>
+
+  <dt>Cras ac lacus in ligula</dt>
+  <dd>Quisque dignissim libero sit amet fermentum tincidunt. Aenean quis neque ante.</dd>
+</dl>
+`));
+</script></code></pre>
+		</div>
+	</div>
+</div>
+
+<hr>
+
+<h3>Blockquote</h3>
+<div class="nsw-docs__example nsw-docs__example--simple">
+  <div class="nsw-docs__component">
+    <blockquote>
+      “Pellentesque facilisis sed quam id blandit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.”
+      <cite>Nullam faucibus</cite>
+    </blockquote>
+  </div>
+</div>
+<div class="nsw-docs-code">
+	<button class="nsw-docs-code__button">
+		<span>Show code</span>
+		<i class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">keyboard_arrow_down</i>
+	</button>
+	<div class="nsw-docs-code__content">
+		<button class="nsw-docs-code__copy">
+			<span>Copy</span>
+			<i class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">content_copy</i>
+		</button>
+		<div class="nsw-docs-code__wrapper">
+<pre><code class="html"><script>
+	  function escapeHtml(unsafe) {
+	    return unsafe
+	     .replace(/&/g, "&amp;")
+	     .replace(/</g, "&lt;")
+	     .replace(/>/g, "&gt;")
+	     .replace(/"/g, "&quot;")
+	     .replace(/'/g, "&#039;");
+	  }
+	  document.write(escapeHtml(`<blockquote>
+  “Pellentesque facilisis sed quam id blandit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.”
+  <cite>Nullam faucibus</cite>
+</blockquote>
+`));
+</script></code></pre>
+		</div>
+	</div>
+</div>
+
+<hr>
+
+<br><br>
+
+<h1>Lorem ipsum dolor sit amet</h1>
+<p class="nsw-intro">Curabitur sem tellus, consectetur sed mauris eu, imperdiet iaculis ex. Mauris ullamcorper hendrerit justo. Cras varius lorem sed convallis pharetra. Praesent viverra vel nisl in interdum. Nam tristique dolor enim, eu rhoncus risus ultricies ac.</p>
+
+<h2>Nulla ac augue sit amet urna pharetra bibendum</h2>
+<p>Nunc facilisis pretium augue, <a href="#">sollicitudin condimentum</a> tellus fringilla sed. Nullam dignissim turpis erat, sit amet volutpat urna auctor nec. Donec eleifend tristique tellus eget efficitur. Mauris vitae nisi nec urna fringilla accumsan. Sed at ex urna. Morbi quis lectus et urna ullamcorper mattis. Phasellus pellentesque dictum nisl ac pretium. Phasellus posuere sem quis ligula ornare semper. <em>Aliquam aliquet lectus sit amet pharetra auctor.</em></p>
+
+<h3>Pellentesque accumsan libero odio</h3>
+<p>Vivamus luctus placerat pretium. In hac habitasse platea dictumst. Quisque sit amet nibh nunc. Fusce eleifend quam ut auctor ultrices. Cras eu aliquam nisl. Proin tortor nisl, fermentum at mi at, molestie tristique nibh.</p>
+<ul>
+  <li><strong>Vestibulum laoreet</strong>, nulla sed bibendum rhoncus</li>
+  <li><strong>Mauris fringilla</strong> lacinia neque id vulputate
+    <ul>
+      <li>Mauris aliquet aliquet elit ut pulvinar</li>
+      <li>Pellentesque odio orci</li>
+      <li>Pellentesque pharetra mauris eget neque interdum luctus</li>
+    </ul>
+  </li>
+  <li><strong>Phasellus vestibulum</strong>, augue et elementum tincidunt, quam libero tempor quam, a porttitor justo leo et tellus</li>
+  <li><strong>Donec pellentesque</strong> risus a tristique tempus</li>
+</ul>
+
+<h3>Mauris dignissim placerat magna ac aliquet</h3>
+<p>Suspendisse blandit hendrerit eros eget viverra. Nulla sit amet dictum tortor, vitae lobortis nisi. Phasellus nec tortor odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+<blockquote>
+  “Pellentesque facilisis sed quam id blandit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi at posuere diam, quis congue mi.”
+  <cite>Nullam faucibus</cite>
+</blockquote>
+
+<h2>Maecenas posuere, orci eu auctor tincidunt, urna neque finibus nunc</h2>
+<figure class="nsw-media nsw-media--right-50">
+  <img src="https://picsum.photos/id/237/2000/1250" alt="A picture of a black dog">
+  <figcaption>A long caption, ee mei labores adipiscing, nonumy reprehendunt ex mea umo tota has at, clita bonorum erroribus vis ne.</figcaption>
+</figure><p>Nunc ut aliquet dui, at facilisis dolor. Nam vitae rutrum libero. Donec finibus massa vitae velit faucibus mattis. Nunc hendrerit fringilla ullamcorper. Donec scelerisque mauris non cursus malesuada. Vivamus turpis elit, placerat eget purus at, varius rutrum velit. Etiam semper sem vel lacinia accumsan. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vehicula mattis tempus.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras fringilla erat vel dui maximus, id malesuada lacus imperdiet. Quisque tincidunt vitae tellus ut finibus. Sed sapien felis, egestas ut hendrerit nec, sodales quis nisl. Suspendisse in nisi et sapien consequat semper. Curabitur laoreet eros id imperdiet dapibus. Nam in dui at nulla pulvinar sollicitudin ac sit amet ligula. In vulputate pharetra accumsan. Fusce eget imperdiet quam, sit amet vestibulum nunc. Vivamus sed bibendum nibh, in pharetra tortor. Pellentesque augue urna, pulvinar ut aliquet nec, consequat vitae ipsum. Maecenas quis volutpat turpis. Pellentesque vel turpis mauris. Nulla facilisi.</p>
+
+<figure class="nsw-media nsw-media--transparent nsw-media--left-40">
+  <img src="https://picsum.photos/id/237/2000/1250" alt="A picture of a black dog">
+  <figcaption>A long caption, ee mei labores adipiscing, nonumy reprehendunt ex mea umo tota has at, clita bonorum erroribus vis ne.</figcaption>
+</figure><p>Nunc vehicula neque nunc, ut placerat turpis luctus a. Aliquam euismod pretium accumsan. Nullam laoreet enim vitae elit finibus, in commodo nulla aliquam. Vivamus ac varius dolor. Praesent hendrerit erat nec pulvinar congue. </p>
+<p>Mauris in sagittis lacus. Aliquam nec consectetur elit, ac gravida mi. Donec ullamcorper felis volutpat venenatis maximus. Quisque facilisis leo at augue pulvinar, ac tincidunt urna egestas.</p>
+<p>Phasellus id sem molestie, facilisis ipsum id, molestie orci. Proin velit erat, luctus et mi eget, maximus aliquet dui. Integer nisl ipsum, malesuada ultrices ipsum a, scelerisque elementum risus. Donec erat urna, fringilla id ornare id, mattis non urna. Duis faucibus ante ac magna rutrum sagittis.</p>
+
+<p>Quisque tempor tellus non tellus auctor vehicula. Nunc quis molestie nulla. Nam ac fringilla est. Phasellus ut justo luctus, auctor nisi id, fringilla neque. Integer lorem elit, mollis sit amet dolor sit amet, elementum accumsan ligula. Fusce et fermentum libero, vulputate venenatis augue. Suspendisse potenti. Vestibulum blandit, mauris a ultrices commodo, ante tortor placerat massa, eget placerat risus nibh sit amet ligula. Nulla viverra odio sit amet nisl aliquet ornare.</p>
+
+<figure class="nsw-media nsw-media--80">
+  <div class="nsw-media__video">
+    <iframe src="https://www.youtube.com/embed/HNHu2zRPSB4" title="Digital.nsw launch with Victor Dominello MP at NSW Parliament House" frameborder="0" allowfullscreen></iframe>
+  </div>
+  <figcaption>A long caption, ee mei labores adipiscing, nonumy reprehendunt ex mea umo tota has at, clita bonorum erroribus vis ne.</figcaption>
+</figure>
+<p>Nunc ut aliquet dui, at facilisis dolor. Nam vitae rutrum libero. Donec finibus massa vitae velit faucibus mattis. Nunc hendrerit fringilla ullamcorper. Donec scelerisque mauris non cursus malesuada. Vivamus turpis elit, placerat eget purus at, varius rutrum velit. Etiam semper sem vel lacinia accumsan. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vehicula mattis tempus.</p>
+</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="../../js/main.js"></script>
+  <script>
+    window.NSW.initSite()
+  </script>
+  <script src="/docs/js/docs.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
+</body>
+</html>
