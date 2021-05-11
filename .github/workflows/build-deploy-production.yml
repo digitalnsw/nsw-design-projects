@@ -2,9 +2,10 @@ name: build-deploy-production
 on:
   push:
     branches:
+      - main
       - master
 jobs:
-  build-production:
+  build-deploy-production:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -13,28 +14,8 @@ jobs:
           node-version: 8
       - run: npm install
       - run: npm run starterkit:build
-      - uses: actions/upload-artifact@v2
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          name: dist
-          path: |
-            dist
-
-  deploy-production:
-    needs: build-production
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
-      - run: npm install -g surge
-      - uses: actions/download-artifact@v2
-        with:
-          name: dist
-          path: |
-            dist
-      - run: surge ./dist ${{ secrets.SURGE_DOMAIN_PRODUCTION }} --token ${{ secrets.SURGE_TOKEN }}
-      - name: Visual test
-        uses: percy/snapshot-action@v0.1.2
-        with:
-          build-directory: "dist"
-        env:
-          PERCY_TOKEN: ${{ secrets.PERCY_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
