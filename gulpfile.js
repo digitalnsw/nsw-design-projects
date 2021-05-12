@@ -143,6 +143,10 @@ function metalsmithBuild(callback) {
     templates: {
       pattern: config.metalSmith.collection.templates.pattern,
       sortBy: sortByAlpha,
+    },
+    projects: {
+      pattern: config.metalSmith.collection.projects.pattern,
+      sortBy: sortByAlpha,
     }
   }))
   metalsmith.use(dynamicCollections({
@@ -161,6 +165,11 @@ function metalsmithBuild(callback) {
       refer: false,
       sortBy: sortByAlpha,
     },
+    projectsnav: {
+      pattern: config.metalSmith.collection.projectsnav.pattern,
+      refer: false,
+      sortBy: sortByAlpha,
+    }
   }))
   metalsmith.use(inplace(config.metalSmith.inplace))
   metalsmith.use(layouts(config.metalSmith.layouts))

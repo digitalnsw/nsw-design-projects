@@ -85,6 +85,9 @@
       "templates": {
         "pattern": ["templates/**/*.hbs", "!templates/**/_*.hbs"]
       },
+      "projects": {
+        "pattern": ["projects/**/*.hbs", "!projects/**/_*.hbs"]
+      },
       "pages": {
         "pattern": ["pages/**/*.hbs", "!pages/**/_*.hbs"]
       },
@@ -96,6 +99,9 @@
       },
       "templatesnav": {
         "pattern": "templates/**/index.hbs"
+      },
+      "projectsnav": {
+        "pattern": "projects/**/index.hbs"
       }
     },
     "inplace": {
