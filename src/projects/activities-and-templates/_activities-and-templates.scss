@@ -3,6 +3,8 @@ $nsw-research-presentation: #752f8a;
 $nsw-research-document: #4a8217;
 $nsw-research-featured: #f9be00;
 
+/* New components */
+
 .nsw-icon-list {
   list-style-type: none;
   padding: 0;
@@ -52,6 +54,16 @@ $nsw-research-featured: #f9be00;
     }
   }
 
+  &--compact {
+    margin-top: rem(6px);
+    margin-bottom: rem(-2px);
+
+    li {
+      padding-top: rem(2px);
+      padding-bottom: rem(2px);
+    }
+  }
+
   &--small {
     margin-top: rem(-4px);
     margin-bottom: rem(-4px);
@@ -67,56 +79,11 @@ $nsw-research-featured: #f9be00;
   }
 }
 
-.nsw-tag {
-  &.nsw-tag--activity,
-  &.nsw-tag--presentation,
-  &.nsw-tag--document,
-  &.nsw-tag--featured {
-    color: $white;
-    border: 0;
-
-    + h3 {
-      margin-top: rem(16px);
-    }
-  }
-
-  &.nsw-tag--activity {
-    background-color: $nsw-research-activity;
-  }
-
-  &.nsw-tag--presentation {
-    background-color: $nsw-research-presentation;
-  }
-
-  &.nsw-tag--document {
-    background-color: $nsw-research-document;
-  }
-
-  &.nsw-tag--featured {
-    background-color: $nsw-research-featured;
-    color: $dark80;
-  }
-}
-
 .nsw-image {
   width: 100%;
   height: auto;
   display: block;
   border: 0;
-}
-
-.nsw-grid {
-  &--centered {
-    align-items: center;
-  }
-}
-
-.nsw-research {
-  .nsw-intro {
-    &:first-child {
-      margin-top: 0;
-    }
-  }
 }
 
 .nsw-research-card {
@@ -239,5 +206,58 @@ $nsw-research-featured: #f9be00;
       background-color: $nsw-research-featured;
       color: $dark80;
     }
+  }
+}
+
+/* Modifications and extensions of existing components */
+
+.nsw-research {
+  .nsw-intro {
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  .nsw-grid {
+    &--centered {
+      align-items: center;
+    }
+  }
+
+  .nsw-tag {
+    &.nsw-tag--activity,
+    &.nsw-tag--presentation,
+    &.nsw-tag--document,
+    &.nsw-tag--featured {
+      color: $white;
+      border: 0;
+
+      + h1,
+      + h2,
+      + h3 {
+        margin-top: rem(16px);
+      }
+    }
+
+    &.nsw-tag--activity {
+      background-color: $nsw-research-activity;
+    }
+
+    &.nsw-tag--presentation {
+      background-color: $nsw-research-presentation;
+    }
+
+    &.nsw-tag--document {
+      background-color: $nsw-research-document;
+    }
+
+    &.nsw-tag--featured {
+      background-color: $nsw-research-featured;
+      color: $dark80;
+    }
+  }
+
+  .nsw-section-separator {
+    margin: rem(48px) 0;
   }
 }
