@@ -263,3 +263,23 @@ $nsw-research-featured: #f9be00;
     margin: rem(48px) 0;
   }
 }
+
+/* Drupal implementation fixes */
+
+.nsw-section {
+  &--bottom {
+    margin-bottom: rem(-28px);
+
+    @include breakpoint('lg') {
+      margin-bottom: rem(-36px);
+    }
+  }
+}
+
+.nsw-research--detail {
+  .nsw-section--white {
+    &:first-child {
+      padding-top: 0;
+    }
+  }
+}
