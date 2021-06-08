@@ -20,6 +20,11 @@ $nsw-research-featured: #f9be00;
     align-items: center;
   }
 
+  a {
+    @include text-link;
+    font-weight: normal;
+  }
+
   i {
     font-size: rem(32px);
     margin-right: rem(8px);
